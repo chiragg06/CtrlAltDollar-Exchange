@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>CtrlAlDelete's Exchange!</title>
-   <script src="exchange.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ctrlAltDollar's Exchange</title>
+    <script src="exchange.js"></script>
 </head>
 <body>
-    <h1>Exchange Rate Converter</h1>
-    <input type="number" id="amount" placeholder="Enter in amount"/>
-    <select id="currency">
-        <option value="EUR">EUR</option>
-        <option value="INR">INR</option>
-        <option value="GBP">GBP</option>
-        <option value="JPY">JPY</option>
-    </select>
-    <button id="convert">Convert Currency</button>
-    <div id="result"></div>
+    <div class="glassmorphic-container">
+        <h1>ctrlAltDollar's Exchange</h1>
+        <div class="glassmorphic-input">
+            <input type="number" id="amount" placeholder="Enter an amount in dollars">
+        </div>
+        <div class="glassmorphic-select">
+            <select id="currency">
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+        </div>
+        <button id="convert" class="glassmorphic-button">Convert Currency</button>
+        <div id="result" class="glassmorphic-result"></div>
+    </div>
 </body>
 </html>
